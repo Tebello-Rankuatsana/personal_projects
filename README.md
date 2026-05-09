@@ -1,7 +1,6 @@
 ## StudyOS – Personal AI Study Platform
 
 A full-stack AI learning platform that converts documents into study material and interactive learning experiences.
-
 This project was built to replace paid study tools with a personal, unlimited, self-hosted alternative.
 
 ## Why this exists
@@ -118,27 +117,27 @@ npm install
 npm run dev
 ```
 ### Roadmap
-Phase 1 — Foundation
-Project scaffolding
-File upload system
-Document parsing
-Basic UI pages
-Phase 2 — AI Integration
-Summaries
-Quiz generation
-Flashcards
-Phase 3 — Vector Search
-Embeddings
-Semantic search
-Context retrieval
-Phase 4 — Gamification
-Mini-games engine
-Timed challenges
-Progress tracking
-Phase 5 — Personal Cloud
-User accounts
-Document library
-Study history
-Long-Term Vision
+#### Phase 1 — Foundation
+* Project scaffolding 
+* File upload system
+* Document parsing
+* Basic UI pages <br/>
+#### Phase 2 — AI Integration
+* Summaries
+* Quiz generation
+* Flashcards <br/>
+#### Phase 3 — Vector Search
+* Embeddings
+* Semantic search
+* Context retrieval <br/>
+#### Phase 4 — Gamification
+* Mini-games engine
+* Timed challenges
+* Progress tracking <br/>
+#### Phase 5 — Personal Cloud
+* User accounts
+* Document library
+* Study history
+* Long-Term Vision
 
 A fully self-hosted personal AI learning environment that evolves into a complete “study operating system”.
