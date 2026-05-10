@@ -39,9 +39,7 @@ app.use('/api/quizzes', quizRoutes);
 app.use('/api/flashcards', flashcardRoutes);
 app.use('/api/games', gameRoutes);
 
-// ─────────────────────────────────────────────
-// Health / status endpoint
-// ─────────────────────────────────────────────
+
 app.get('/api/health', async (_req, res) => {
   const [ollamaModels, chromaOk] = await Promise.all([
     listModels(),
@@ -58,24 +56,17 @@ app.get('/api/health', async (_req, res) => {
   });
 });
 
-// ─────────────────────────────────────────────
-// 404 fallthrough
-// ─────────────────────────────────────────────
+
 app.use((_req, res) => {
   res.status(404).json({ error: 'Route not found' });
 });
 
-// ─────────────────────────────────────────────
-// Global error handler
-// ─────────────────────────────────────────────
 app.use((err, _req, res, _next) => {
   console.error('[server] Unhandled error:', err);
   res.status(500).json({ error: err.message || 'Internal server error' });
 });
 
-// ─────────────────────────────────────────────
-// Start
-// ─────────────────────────────────────────────
+
 async function start() {
   // Run DB migrations (creates tables if not present)
   runMigrations();
@@ -83,10 +74,10 @@ async function start() {
   app.listen(PORT, () => {
     console.log('');
     console.log('╔══════════════════════════════════════╗');
-    console.log('║        StudyOS Backend Running        ║');
+    console.log('║        StudyOS Backend Running       ║');
     console.log('╠══════════════════════════════════════╣');
-    console.log(`║  API:     http://localhost:${PORT}/api    ║`);
-    console.log(`║  Health:  http://localhost:${PORT}/api/health ║`);
+    console.log(`║ API:     http://localhost:${PORT}/api║`);
+    console.log(`║ Health:  http://localhost:${PORT}/api/health ║`);
     console.log('╚══════════════════════════════════════╝');
     console.log('');
   });
