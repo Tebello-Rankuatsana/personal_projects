@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Gamepad2, Shuffle, PenLine, Zap, ToggleLeft, Plus, ArrowRight, Play } from 'lucide-react'
+import { Gamepad2, Shuffle, PenLine, Zap, ToggleLeft,Play } from 'lucide-react'
 import PageHeader from '../components/PageHeader.jsx'
 import Card from '../components/Card.jsx'
 import Button from '../components/Button.jsx'

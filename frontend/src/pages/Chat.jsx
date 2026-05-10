@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 import { Send, Bot, User, Sparkles, ChevronDown } from 'lucide-react'
-import Button from '../components/Button.jsx'
+// import Button from '../components/Button.jsx'
 
 const MODES = [
   { value: 'default', label: 'Default' },

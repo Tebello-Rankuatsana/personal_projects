@@ -7,15 +7,15 @@ import Library from './pages/Library.jsx'
 import Quizzes from './pages/Quizzes.jsx'
 import Flashcards from './pages/Flashcards.jsx'
 import Games from './pages/Games.jsx'
-import Settings from './pages/Settins.jsx'
-
+import Settings from './pages/Settings.jsx'
+ 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
         {/* Landing — full screen, no sidebar */}
         <Route path="/" element={<Landing />} />
-
+ 
         {/* App routes — wrapped in sidebar layout */}
         <Route element={<PageLayout />}>
           <Route path="/dashboard" element={<Dashboard />} />
