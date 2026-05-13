@@ -42,7 +42,7 @@ export default function Chat() {
     setTimeout(() => {
       setMessages(prev => [...prev, {
         role: 'assistant',
-        content: 'This is a placeholder response. Connect the backend to get real AI answers from your documents.',
+        content: 'connect to the backend to get real answers.',
       }])
       setLoading(false)
     }, 800)

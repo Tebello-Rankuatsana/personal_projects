@@ -12,8 +12,8 @@ const stats = [
 ]
 
 const quickActions = [
-  { label: 'Upload a document', description: 'Add study material to your library', icon: Upload, to: '/library' },
-  { label: 'Chat with AI tutor', description: 'Ask questions about your documents', icon: MessageSquare, to: '/chat' },
+  { label: 'Upload a document', description: 'Add study material to your library', icon: Upload, to: '/frontend/src/pages/Library.jsx' },
+  { label: 'Chat with AI tutor', description: 'Ask questions about your documents', icon: MessageSquare, to: '/frontend/src/pages/Chat.jsx' },
   { label: 'Generate a quiz', description: 'Test your knowledge instantly', icon: ClipboardList, to: '/quizzes' },
   { label: 'Study flashcards', description: 'Reinforce memory with spaced repetition', icon: Layers, to: '/flashcards' },
 ]
