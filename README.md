@@ -141,3 +141,8 @@ npm run dev
 * Long-Term Vision
 
 A fully self-hosted personal AI learning environment that evolves into a complete “study operating system”.
+
+```
+$ whoami
+> ranks
+```
