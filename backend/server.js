@@ -79,7 +79,7 @@ async function start() {
     console.log(`║ API:     http://localhost:${PORT}/api║`);
     console.log(`║ Health:  http://localhost:${PORT}/api/health ║`);
     console.log('╚══════════════════════════════════════╝');
-    console.log('');
+    console.log('BY: Ceo: Ranks');
   });
 }
 
