@@ -21,7 +21,7 @@ const styles = {
     boxShadow: '0 1px 3px oklch(48% 0.22 264 / 30%)',
   },
   secondary: {
-    backgroundColor: 'white',
+    backgroundColor: 'grey',
     color: 'var(--color-text-primary)',
     border: '1px solid var(--color-border-strong)',
     boxShadow: '0 1px 2px oklch(0% 0 0 / 4%)',
