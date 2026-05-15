@@ -25,7 +25,7 @@ export default function Dashboard() {
     <div style={{ padding: '36px 40px', maxWidth: '900px' }}>
       <PageHeader
         title="Dashboard"
-        description="Your personal AI study workspace — fully local, fully private."
+        description="Localised AI study workspace — fully local, fully private."
       />
 
       {/* Stats */}

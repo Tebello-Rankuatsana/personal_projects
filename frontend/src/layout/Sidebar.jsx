@@ -1,4 +1,4 @@
-import { NavLink, useLocation } from 'react-router-dom'
+import { NavLink} from 'react-router-dom'
 import {
   LayoutDashboard,
   MessageSquare,
@@ -30,7 +30,7 @@ export default function Sidebar() {
         top: 0,
         display: 'flex',
         flexDirection: 'column',
-        backgroundColor: 'white',
+        backgroundColor: 'grey',
         borderRight: '1px solid var(--color-border)',
         padding: '0',
         zIndex: 40,
