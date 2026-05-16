@@ -7,10 +7,7 @@ const router = Router();
 // Valid tutor modes
 const VALID_MODES = ['default', 'explain', 'lecturer', 'step_by_step', 'exam_revision'];
 
-// ─────────────────────────────────────────────
-// POST /api/chat
-// Body: { message, subject?, mode?, session_id? }
-// ─────────────────────────────────────────────
+
 router.post('/', async (req, res) => {
   try {
     const { message, subject, mode, session_id } = req.body;
@@ -50,9 +47,6 @@ router.post('/', async (req, res) => {
   }
 });
 
-// ─────────────────────────────────────────────
-// GET /api/chat/history?session_id=&limit=
-// ─────────────────────────────────────────────
 router.get('/history', (req, res) => {
   try {
     const session = req.query.session_id || 'default';
@@ -75,9 +69,7 @@ router.get('/history', (req, res) => {
   }
 });
 
-// ─────────────────────────────────────────────
-// DELETE /api/chat/history?session_id=
-// ─────────────────────────────────────────────
+
 router.delete('/history', (req, res) => {
   try {
     const session = req.query.session_id || 'default';

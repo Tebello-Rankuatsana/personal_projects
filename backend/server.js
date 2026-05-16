@@ -76,6 +76,8 @@ async function start() {
     console.log(`║ Health:  http://localhost:${PORT}/api/health ║`);
     console.log('╚══════════════════════════════════════╝');
     console.log('BY: Ceo: Ranks');
+    // just a sanity check log to confirm DB is working and migrations ran
+    console.log('SELECT * FROM game_sets;');
   });
 }
 
